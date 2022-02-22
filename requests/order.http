@@ -1,0 +1,24 @@
+POST http://localhost:8080/api/order HTTP/1.1
+content-type: application/json
+
+{
+    "data": {
+        "user": {
+            "name": "mike",
+            "email": "mike@gmail.com"
+        },
+        "products": [
+            {
+                "name": "peak milk",
+                "price": 1000,
+                "quantity": 1
+            },
+            {
+                "name": "cost milk",
+                "price": 1000,
+                "quantity": 2
+            }
+        ],
+        "total": 2000
+    }
+}

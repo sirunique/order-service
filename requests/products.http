@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/product HTTP/1.1
+content-type: application/json
+
+{
+    "data": [
+        {
+            "name":"Peak Milk",
+            "description":"Peak Milk",
+            "price":1000
+        },
+        {
+            "name":"Three Crown Milk",
+            "description":"Three Crown Milk",
+            "price":2000
+        },
+        {
+            "name":"Coast Milk",
+            "description":"Coast Milk",
+            "price":1000
+        },
+        {
+            "name":"Soya Crown Milk",
+            "description":"Soya Crown Milk",
+            "price":2000
+        }
+    ]
+}
+
+###
+GET  http://localhost:8080/api/product/- HTTP/1.1
